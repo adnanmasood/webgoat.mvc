@@ -1,0 +1,75 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Shared/f:Site.Master" caret="614" fromTop="2" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="634" fromTop="8" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:AccountController.cs" caret="471" fromTop="0" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Account/f:LogOn.aspx" caret="1180" fromTop="0" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Injection.aspx" caret="444" fromTop="11" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="10" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="19" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="18" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="12" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="12" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="9" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="15" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="18" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="15" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="15" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="11" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="5983" fromTop="10" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="5983" fromTop="14" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="5983" fromTop="18" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="5983" fromTop="22" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="5983" fromTop="12" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="5983" fromTop="16" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="5983" fromTop="20" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="5983" fromTop="23" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="5983" fromTop="12" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="5983" fromTop="6" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Index.aspx" caret="3907" fromTop="12" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Injection.aspx" caret="451" fromTop="11" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="23" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="3" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Views/d:Home/f:Injection.aspx" caret="386" fromTop="9" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="22" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="5" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="6" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="15" />
+      <File id="7289AA89-E8E1-4F15-9A98-0FF670460FAE/d:Controllers/f:HomeController.cs" caret="3900" fromTop="10" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="ActionName" priority="0" />
+      <Item value="string" priority="2" />
+      <Item value="ViewBag" priority="0" />
+      <Item value="msg" priority="1" />
+      <Item value="using" priority="0" />
+      <Item value="System" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

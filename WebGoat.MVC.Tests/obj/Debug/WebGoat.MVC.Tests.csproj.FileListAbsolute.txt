@@ -1,0 +1,8 @@
+c:\development\WebGoat.MVC\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.Tests.dll.config
+c:\development\WebGoat.MVC\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.Tests.dll
+c:\development\WebGoat.MVC\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.Tests.pdb
+c:\development\WebGoat.MVC\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.dll
+c:\development\WebGoat.MVC\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.pdb
+c:\development\WebGoat.MVC\WebGoat.MVC.Tests\obj\Debug\ResolveAssemblyReference.cache
+c:\development\WebGoat.MVC\WebGoat.MVC.Tests\obj\Debug\WebGoat.MVC.Tests.dll
+c:\development\WebGoat.MVC\WebGoat.MVC.Tests\obj\Debug\WebGoat.MVC.Tests.pdb

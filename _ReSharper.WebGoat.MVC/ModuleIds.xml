@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="7289AA89-E8E1-4F15-9A98-0FF670460FAE" ModuleId="WebGoat.MVC" />
+  <Module PersistentId="0820AEAD-EF41-4480-BE28-616051BBDD6A" ModuleId="WebGoat.MVC.Tests" />
+</Modules>

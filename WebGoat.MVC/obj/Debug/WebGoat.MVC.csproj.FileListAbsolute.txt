@@ -1,0 +1,7 @@
+c:\development\WebGoat.MVC\WebGoat.MVC\bin\WebGoat.MVC.dll
+c:\development\WebGoat.MVC\WebGoat.MVC\bin\WebGoat.MVC.pdb
+c:\development\WebGoat.MVC\WebGoat.MVC\bin\EntityFramework.dll
+c:\development\WebGoat.MVC\WebGoat.MVC\bin\EntityFramework.xml
+c:\development\WebGoat.MVC\WebGoat.MVC\obj\Debug\ResolveAssemblyReference.cache
+c:\development\WebGoat.MVC\WebGoat.MVC\obj\Debug\WebGoat.MVC.dll
+c:\development\WebGoat.MVC\WebGoat.MVC\obj\Debug\WebGoat.MVC.pdb
