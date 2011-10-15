@@ -6,3 +6,11 @@ c:\development\WebGoat.MVC\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.pdb
 c:\development\WebGoat.MVC\WebGoat.MVC.Tests\obj\Debug\ResolveAssemblyReference.cache
 c:\development\WebGoat.MVC\WebGoat.MVC.Tests\obj\Debug\WebGoat.MVC.Tests.dll
 c:\development\WebGoat.MVC\WebGoat.MVC.Tests\obj\Debug\WebGoat.MVC.Tests.pdb
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.Tests.dll.config
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.Tests.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.Tests.pdb
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.pdb
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\obj\Debug\WebGoat.MVC.Tests.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\obj\Debug\WebGoat.MVC.Tests.pdb

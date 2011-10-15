@@ -5,3 +5,10 @@ c:\development\WebGoat.MVC\WebGoat.MVC\bin\EntityFramework.xml
 c:\development\WebGoat.MVC\WebGoat.MVC\obj\Debug\ResolveAssemblyReference.cache
 c:\development\WebGoat.MVC\WebGoat.MVC\obj\Debug\WebGoat.MVC.dll
 c:\development\WebGoat.MVC\WebGoat.MVC\obj\Debug\WebGoat.MVC.pdb
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC\bin\WebGoat.MVC.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC\bin\WebGoat.MVC.pdb
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC\bin\EntityFramework.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC\bin\EntityFramework.xml
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC\obj\Debug\ResolveAssemblyReference.cache
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC\obj\Debug\WebGoat.MVC.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC\obj\Debug\WebGoat.MVC.pdb
