@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebGoat.MVC.Code;
 
 namespace WebGoat.MVC.Controllers
 {
@@ -173,15 +174,44 @@ namespace WebGoat.MVC.Controllers
 
         #region Exploit Examples
 
+        /// <summary>
+        /// This example points to the Redirect action.
+        /// </summary>
+        /// <returns></returns>
+        [ActionName("redirect1")]
         public ActionResult UnvalidatedRedirectsAndForwards1()
         {
             return View();
         }
 
+        /// <summary>
+        /// This example points to the redirect action that validates
+        /// the incoming url to a whitelist.
+        /// </summary>
+        /// <returns></returns>
+        [ActionName("redirect2")]
         public ActionResult UnvalidatedRedirectsAndForwards2()
         {
             return View();
         }
+
+        /// <summary>
+        /// Action methods should NOT contain a "Redirect" ActionResult
+        /// unless it is whitelisted first.
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Redirect()
+        {
+            string url = Request.QueryString["url"];
+            if (!url.StartsWith("http://"))
+            {
+                url = "http://" + url;
+            }
+            
+            return Redirect(url);
+        }
+
+
 
         #endregion
 
@@ -189,6 +219,7 @@ namespace WebGoat.MVC.Controllers
 
         public ActionResult UnvalidatedRedirectsAndForwardsFix1()
         {
+
             return View();
         }
 
@@ -197,6 +228,63 @@ namespace WebGoat.MVC.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Always make sure the URL belongs to this domain.  When the 
+        /// url is found to not be local, we will be redirected to the 
+        /// IncorrectURL action.
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Redirect1Fix()
+        {
+            string url = Request.QueryString["url"];
+            if (!url.StartsWith("http://"))
+            {
+                url = "http://" + url;
+            }
+            if (!Url.IsLocalUrl(url))
+            {
+                //throw new Exception("This URL does not belong to this domain.");
+                return RedirectToAction("IncorrectURL");
+            }
+            return View();
+        }
+
+        /// <summary>
+        /// The link on this view will generate an error if the url query string
+        /// is not contained within the xml whitelist file.  When the error occurs
+        /// it will redirect to the WhiteListError action.
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult RedirectToWhiteList()
+        {
+            string url = Request.QueryString["url"];
+
+
+            XmlManager xmlManager = new XmlManager(Server.MapPath("~/xml/whitelist.xml"));
+            var whiteList = xmlManager.GetWhiteList();
+
+            if (!whiteList.Contains(url))
+            {
+                //throw new Exception("This URL is not found in our whitelist of domains.");
+                return RedirectToAction("WhiteListError");
+            }
+
+            if (!url.StartsWith("http://"))
+            {
+                url = "http://" + url;
+            }
+            return Redirect(url);
+        }
+
+        public ActionResult IncorrectURL()
+        {
+            return View();
+        }
+
+        public ActionResult WhiteListError()
+        {
+            return View();
+        }
 
         #endregion
 

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="acecbbaf-8823-4533-a072-509e83a498b2" name="King Wilder@KINGWILDER-PC 2011-10-14 20:58:22" runUser="KingWilder-PC\King Wilder" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="f340dfc4-ada3-42b8-9880-d66b2aed1d51">
+    <Deployment runDeploymentRoot="King Wilder_KINGWILDER-PC 2011-10-14 20_58_22">
+      <DeploymentItem filename="C:\VSProjects\webgoat.mvc\webgoat.mvc\packages\MvcContrib.Mvc3.TestHelper-ci.3.0.89.0\lib\MvcContrib.TestHelper.dll" />
+      <DeploymentItem filename="C:\VSProjects\webgoat.mvc\webgoat.mvc\packages\Mvc2Futures.2.0.50217.0\lib\Microsoft.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\VSProjects\webgoat.mvc\webgoat.mvc\packages\RhinoMocks.3.6\lib\Rhino.Mocks.dll" />
+      <DeploymentItem filename="C:\VSProjects\webgoat.mvc\webgoat.mvc\packages\MvcContrib.2.0.95.0\lib\MvcContrib.dll" />
+      <DeploymentItem filename="C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC\bin\WebGoat.MVC.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-10-14T20:58:22.7176227-07:00" queuing="2011-10-14T20:58:23.4696658-07:00" start="2011-10-14T20:58:23.4796663-07:00" finish="2011-10-14T20:58:24.2707116-07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="security_redirect1_calls_UnvalidatedRedirectsAndForwards1_action" storage="c:\vsprojects\webgoat.mvc\webgoat.mvc\webgoat.mvc.tests\bin\debug\webgoat.mvc.tests.dll" id="da95f305-ba2d-602e-1997-1170a86f97f2">
+      <Execution id="14412267-7565-4700-829d-c27ecf7eb950" />
+      <TestMethod codeBase="C:/VSProjects/webgoat.mvc/webgoat.mvc/WebGoat.MVC.Tests/bin/Debug/WebGoat.MVC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WebGoat.MVC.Tests.Controllers.SecurityControllerTests, WebGoat.MVC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="security_redirect1_calls_UnvalidatedRedirectsAndForwards1_action" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="da95f305-ba2d-602e-1997-1170a86f97f2" executionId="14412267-7565-4700-829d-c27ecf7eb950" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="14412267-7565-4700-829d-c27ecf7eb950" testId="da95f305-ba2d-602e-1997-1170a86f97f2" testName="security_redirect1_calls_UnvalidatedRedirectsAndForwards1_action" computerName="KINGWILDER-PC" duration="00:00:00.4838810" startTime="2011-10-14T20:58:23.4946672-07:00" endTime="2011-10-14T20:58:24.2467102-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14412267-7565-4700-829d-c27ecf7eb950">
+    </UnitTestResult>
+  </Results>
+</TestRun>

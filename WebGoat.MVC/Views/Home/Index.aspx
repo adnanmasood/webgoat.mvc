@@ -157,10 +157,19 @@
                     <div id="UnvalidatedRedirectsAndForwards" class="child-div" style="display: none;">
                         <ol>
                             <li>
-                                <%= Html.ActionLink("Scenario #1", "UnvalidatedRedirectsAndForwards1", "Security")%>
+                                <%= Html.ActionLink("Exploit #1", "redirect1", "Security")%>
                                 - The application has an action method called &quot;/redirect&quot; which takes
                                 a single parameter named &quot;url&quot;. The attacker crafts a malicious URL that
-                                redirects users to a malicious site that performs phishing and installs malware.</li>
+                                redirects users to a malicious site that performs phishing and installs malware.
+                                <ol>
+                                <li><%= Html.ActionLink("Fix #1", "UnvalidatedRedirectsAndForwardsFix1", "Security")%></li>
+                                <li><%= Html.ActionLink("Fix #2", "UnvalidatedRedirectsAndForwardsFix2", "Security")%></li>
+                                </ol>
+                                </li>
+                            <li><%= Html.ActionLink("Exploit #2", "redirect2", "Security") %>
+                                - The application uses forward to route requests between different parts of the site.  To facilitate this, some pages use a parameter to indicate where the user should be sent if a transaction is successful.  In this case, the attacker crafts a URL that will pass the application's access control check and then forward the attacker to an adminstrative function that she would not normally be able to access.</li>
+
+                            
                         </ol>
                     </div>
                 </td>

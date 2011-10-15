@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<whitelist>
+  <domain url="mvccentral.net" />
+  <domain url="linqcentral.net" />
+  <domain url="designpatternscentral.net" />
+  <domain url="exceptioncentral.net" />
+  <domain url="wcfcentral.net" />
+</whitelist>

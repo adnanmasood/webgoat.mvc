@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="68335fb6-9b0d-4174-aefe-d767fd2e3425" name="King Wilder@KINGWILDER-PC 2011-10-14 20:56:37" runUser="KingWilder-PC\King Wilder" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="a2967c98-9deb-4c82-a7e3-ff532efc8d12">
+    <Deployment runDeploymentRoot="King Wilder_KINGWILDER-PC 2011-10-14 20_56_37">
+      <DeploymentItem filename="C:\VSProjects\webgoat.mvc\webgoat.mvc\packages\MvcContrib.Mvc3.TestHelper-ci.3.0.89.0\lib\MvcContrib.TestHelper.dll" />
+      <DeploymentItem filename="C:\VSProjects\webgoat.mvc\webgoat.mvc\packages\Mvc2Futures.2.0.50217.0\lib\Microsoft.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\VSProjects\webgoat.mvc\webgoat.mvc\packages\RhinoMocks.3.6\lib\Rhino.Mocks.dll" />
+      <DeploymentItem filename="C:\VSProjects\webgoat.mvc\webgoat.mvc\packages\MvcContrib.2.0.95.0\lib\MvcContrib.dll" />
+      <DeploymentItem filename="C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC\bin\WebGoat.MVC.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-10-14T20:56:37.3285948-07:00" queuing="2011-10-14T20:56:38.1796435-07:00" start="2011-10-14T20:56:38.1906441-07:00" finish="2011-10-14T20:56:39.1516991-07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="security_redirect1_calls_UnvalidatedRedirectsAndForwards1_action" storage="c:\vsprojects\webgoat.mvc\webgoat.mvc\webgoat.mvc.tests\bin\debug\webgoat.mvc.tests.dll" id="da95f305-ba2d-602e-1997-1170a86f97f2">
+      <Execution id="6e90f156-aa42-408d-8bd9-aeda583a1e66" />
+      <TestMethod codeBase="C:/VSProjects/webgoat.mvc/webgoat.mvc/WebGoat.MVC.Tests/bin/Debug/WebGoat.MVC.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WebGoat.MVC.Tests.Controllers.SecurityControllerTests, WebGoat.MVC.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="security_redirect1_calls_UnvalidatedRedirectsAndForwards1_action" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="da95f305-ba2d-602e-1997-1170a86f97f2" executionId="6e90f156-aa42-408d-8bd9-aeda583a1e66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6e90f156-aa42-408d-8bd9-aeda583a1e66" testId="da95f305-ba2d-602e-1997-1170a86f97f2" testName="security_redirect1_calls_UnvalidatedRedirectsAndForwards1_action" computerName="KINGWILDER-PC" duration="00:00:00.6137767" startTime="2011-10-14T20:56:38.2176457-07:00" endTime="2011-10-14T20:56:39.0986961-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e90f156-aa42-408d-8bd9-aeda583a1e66">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method WebGoat.MVC.Tests.Controllers.SecurityControllerTests.security_redirect1_calls_UnvalidatedRedirectsAndForwards1_action threw exception: 
+MvcContrib.TestHelper.AssertionException: Expected Security but was curity</Message>
+          <StackTrace>    at WebGoat.MVC.Tests.Controllers.SecurityControllerTests.security_redirect1_calls_UnvalidatedRedirectsAndForwards1_action() in C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\Controllers\SecurityControllerTests.cs:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

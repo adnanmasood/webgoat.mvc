@@ -14,3 +14,8 @@ C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\WebGoat.MVC.pd
 C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\obj\Debug\ResolveAssemblyReference.cache
 C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\obj\Debug\WebGoat.MVC.Tests.dll
 C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\obj\Debug\WebGoat.MVC.Tests.pdb
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\Microsoft.Web.Mvc.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\MvcContrib.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\MvcContrib.xml
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\MvcContrib.TestHelper.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\Rhino.Mocks.dll
