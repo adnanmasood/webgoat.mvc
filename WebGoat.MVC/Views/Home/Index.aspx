@@ -82,7 +82,7 @@
             <tr>
                 <td>
                     <center>
-                        <a href="home/security-misconfig" title="Top 10 2010-A6" class="mw-redirect">A6-Security
+                        <a title="Top 10 2010-A6" class="mw-redirect child-links" data="SecurityMisconfiguration">A6-Security
                             Misconfiguration</a></center>
                 </td>
                 <td>
@@ -91,12 +91,41 @@
                     All these settings should be defined, implemented, and maintained as many are not
                     shipped with secure defaults. This includes keeping all software up to date, including
                     all code libraries used by the application.
+
+                    <div id="SecurityMisconfiguration" class="child-div" style="display: none;">
+                        <ol>
+                            <li>
+                                <%= Html.ActionLink("File Accessibility Exploit", "SecurityMisconfiguration1", "Security")%>
+                                - text files such as log files that contain sensitive information are accessible via a browser.
+                                
+                                <ol>
+                                    <li><%: Html.ActionLink("Fix #1", "", "") %> - disable the ability to view certain file extensions in IIS.</li>
+                                    <li><%: Html.ActionLink("Fix #2", "", "") %> - </li>
+                                </ol>
+                                
+                                </li>
+                            <li><%: Html.ActionLink("YSOD Misconfiguration", "SecurityMisconfiguration2", "Security")%>
+                             - the &quot;Yellow screen of Death&quot; displays the complete error stack trace which can be used to provide valuable server information.
+                                                            
+                                <ol>
+                                    <li><%: Html.ActionLink("Fix #1", "", "") %> - enable error handling to display friendly error page.</li>
+                                    <li><%: Html.ActionLink("Fix #2", "", "") %> - </li>
+                                </ol>
+                                
+
+                            </li>
+                            <li><%: Html.ActionLink("FileNotFoundException Misconfiguration", "SecurityMisconfiguration3", "Security")%>
+                            - 
+                            </li>
+                        </ol>
+                    </div>
+
                 </td>
             </tr>
             <tr>
                 <td>
                     <center>
-                        <a href="home/insecure-crypto-storage" title="Top 10 2010-A7" class="mw-redirect">A7-Insecure
+                        <a title="Top 10 2010-A7" class="mw-redirect child-links" data="InsecureCryptographicStorage">A7-Insecure
                             Cryptographic Storage</a></center>
                 </td>
                 <td>
@@ -104,12 +133,29 @@
                     SSNs, and authentication credentials, with appropriate encryption or hashing. Attackers
                     may steal or modify such weakly protected data to conduct identity theft, credit
                     card fraud, or other crimes.
+
+
+                    <div id="InsecureCryptographicStorage" class="child-div" style="display: none;">
+                        <ol>
+                            <li>
+                                <%= Html.ActionLink("Insecure Cryptographic Storage Exploit", "InsecureCryptographicStorage1", "Security")%>
+                                - failure to restrict access to resources comes from not placing security features on resources. By simply adding the "Authorize" attribute to either a controller or an action, you can easily restrict access to that resource.
+                                
+                                <ol>
+                                    <li><%: Html.ActionLink("Fix #1", "", "") %> - use SSL.</li>
+                                    <li><%: Html.ActionLink("Fix #2", "", "") %> - use SSL and encrypt the data.</li>
+                                </ol>
+                                
+                                </li>
+                        </ol>
+                    </div>
+
                 </td>
             </tr>
             <tr>
                 <td>
                     <center>
-                        <a href="home/access-failure" title="Top 10 2010-A8" class="mw-redirect">A8-Failure
+                        <a title="Top 10 2010-A8" class="mw-redirect child-links" data="FailureToRestrictURLAccess">A8-Failure
                             to Restrict URL Access</a></center>
                 </td>
                 <td>
@@ -117,6 +163,22 @@
                     buttons. However, applications need to perform similar access control checks each
                     time these pages are accessed, or attackers will be able to forge URLs to access
                     these hidden pages anyway.
+
+                    <div id="FailureToRestrictURLAccess" class="child-div" style="display: none;">
+                        <ol>
+                            <li>
+                                <%= Html.ActionLink("No Authentication to Resource Exploit", "FailureToRestrictURLAccess1", "Security")%>
+                                - failure to restrict access to resources comes from not placing security features on resources. By simply adding the "Authorize" attribute to either a controller or an action, you can easily restrict access to that resource.
+                                
+                                <ol>
+                                    <li><%: Html.ActionLink("Fix #1", "", "") %> - apply the "Authorize" attribute to the controller or action.</li>
+                                    <li><%: Html.ActionLink("Fix #2", "", "") %> - apply the "Authorize" attribute to the controller or action with Roles or Users that are granted access to the resource.</li>
+                                </ol>
+                                
+                                </li>
+                        </ol>
+                    </div>
+
                 </td>
             </tr>
             <tr>
@@ -134,10 +196,16 @@
                     <div id="InsufficientTransportLayerProtection" class="child-div" style="display: none;">
                         <ol>
                             <li>
-                                <%= Html.ActionLink("Scenario #1", "InsufficientTransportLayerProtection1", "Security")%>
-                                - A site simply doesn't use SSL for all pages that require authentication.  An Attacher simply monitors network traffic (like an open wireless or their neighborhood cable modem network), and observes an authenticated victim's session cookie.  The Attacker then replays this cookie and takes over the user's session.</li>
-                            <li><%= Html.ActionLink("Scenario #2", "InsufficientTransportLayerProtection1", "Security")%>
-                                - A site has an improperly configured SSL certificate which causes browser warnings for its users.  User have to accept such warnings and continue in order to use the site.  This causes users to get accustomed to such warnings.  A Phishing attack against the site's customers lures them to a look-alike site which also doesn't have a valid certificate, which generates similar browser warnings.  Since victims are accustomed to such warnings, they proceeed on and use the phishing site, giving away passwords or other private data.</li>
+                                <%= Html.ActionLink("Non-SSL Exploit", "InsufficientTransportLayerProtection1", "Security")%>
+                                - A site simply doesn't use SSL for all pages that require authentication.  An Attacker simply monitors network traffic (like an open wireless or their neighborhood cable modem network), and observes an authenticated victim's session cookie.  The Attacker then replays this cookie and takes over the user's session.
+                                
+                                <ol>
+                                    <li><%: Html.ActionLink("Fix #1", "", "") %> - obtain an SSL certificate from a CA and install in IIS.  Set the bindings for the certifcate to make the entire site secure.</li>
+                                    <li><%: Html.ActionLink("Fix #2", "", "") %> - include the RequireHttps attribute on the required controller.  From that point on, your site will be under SSL. (SSL Certificate required!)</li>
+                                    <li><%: Html.ActionLink("Fix #3", "", "") %> - add the RequireHttpsAttribute() class in the Global.asax file as a global filter.  (SSL Certificate required!) </li>
+                                </ol>
+                                
+                                </li>
                         </ol>
                     </div>
 
@@ -157,19 +225,16 @@
                     <div id="UnvalidatedRedirectsAndForwards" class="child-div" style="display: none;">
                         <ol>
                             <li>
-                                <%= Html.ActionLink("Exploit #1", "redirect1", "Security")%>
+                                <%= Html.ActionLink("Redirect Exploit", "redirect1", "Security")%>
                                 - The application has an action method called &quot;/redirect&quot; which takes
                                 a single parameter named &quot;url&quot;. The attacker crafts a malicious URL that
                                 redirects users to a malicious site that performs phishing and installs malware.
                                 <ol>
-                                <li><%= Html.ActionLink("Fix #1", "UnvalidatedRedirectsAndForwardsFix1", "Security")%></li>
-                                <li><%= Html.ActionLink("Fix #2", "UnvalidatedRedirectsAndForwardsFix2", "Security")%></li>
+                                <li><%= Html.ActionLink("Fix #1", "UnvalidatedRedirectsAndForwardsFix1", "Security")%> - this uses Url.IsLocalUrl(url) to determine if the url belongs to this domain.</li>
+                                <li><%= Html.ActionLink("Fix #2", "UnvalidatedRedirectsAndForwardsFix2", "Security")%> - this uses an Xml whitelist to compare the url against.</li>
+                                <li><%= Html.ActionLink("Fix #3", "", "")%> - don't use the "Redirect()" ActionResult type.</li>
                                 </ol>
                                 </li>
-                            <li><%= Html.ActionLink("Exploit #2", "redirect2", "Security") %>
-                                - The application uses forward to route requests between different parts of the site.  To facilitate this, some pages use a parameter to indicate where the user should be sent if a transaction is successful.  In this case, the attacker crafts a URL that will pass the application's access control check and then forward the attacker to an adminstrative function that she would not normally be able to access.</li>
-
-                            
                         </ol>
                     </div>
                 </td>

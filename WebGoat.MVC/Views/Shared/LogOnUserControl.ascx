@@ -4,13 +4,13 @@
     {
 %>
         Welcome <strong><%:Page.User.Identity.Name%></strong>!
-        [ <%:Html.ActionLink("Log Off", "LogOff", "Account")%> ]
+        [ <%:Html.ActionLink("Log Off", "LogOff", "SGAccount")%> ]
 <%
     }
     else
     {
 %> 
-        [ <%:Html.ActionLink("Log On", "LogOn", "Account")%> ]
+        [ <%:Html.ActionLink("Log On", "LogOn", "SGAccount")%> ]
 <%
     }
 %>

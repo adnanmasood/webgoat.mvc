@@ -19,3 +19,9 @@ C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\MvcContrib.dll
 C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\MvcContrib.xml
 C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\MvcContrib.TestHelper.dll
 C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\Rhino.Mocks.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\SecurityGuard.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\MVCCentral.Framework.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\SecurityGuard.pdb
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\MVCCentral.Framework.pdb
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\EnhancedEncryption.dll
+C:\VSProjects\webgoat.mvc\webgoat.mvc\WebGoat.MVC.Tests\bin\Debug\GBRandomNumberGenerator.dll

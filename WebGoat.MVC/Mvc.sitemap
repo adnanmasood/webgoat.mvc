@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-3.0" enableLocalization="true">
+  <mvcSiteMapNode title="Home" controller="Home" action="Index">
+    <mvcSiteMapNode title="About" controller="Home" action="About" />
+    <mvcSiteMapNode title="Dashboard" controller="Demo" action="Index" area="Dashboard" roles="Administrator" />
+    <mvcSiteMapNode title="Security Guard" controller="Dashboard" action="Index" area="SecurityGuard" roles="SecurityGuard" />
+  </mvcSiteMapNode>
+</mvcSiteMap>

@@ -11,6 +11,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebGoat.MVC.Code;
+using WebGoat.MVC.Models;
+using System.IO;
+using System.Net;
 
 namespace WebGoat.MVC.Controllers
 {
@@ -28,12 +31,16 @@ namespace WebGoat.MVC.Controllers
 
         public ActionResult SecurityMisconfiguration2()
         {
+            throw new Exception("Exception thrown by King.");
+
             return View();
         }
 
         public ActionResult SecurityMisconfiguration3()
         {
-            return View();
+            //throw new FileNotFoundException();
+
+            return View("Bells");
         }
 
         public ActionResult SecurityMisconfiguration4()
@@ -71,6 +78,7 @@ namespace WebGoat.MVC.Controllers
         #region Exploit Examples
         public ActionResult InsecureCryptographicStorage1()
         {
+            
             return View();
         }
 
@@ -217,12 +225,20 @@ namespace WebGoat.MVC.Controllers
 
         #region Fixes
 
+        /// <summary>
+        /// This points to Redirect1Fix action.
+        /// </summary>
+        /// <returns></returns>
         public ActionResult UnvalidatedRedirectsAndForwardsFix1()
         {
 
             return View();
         }
 
+        /// <summary>
+        /// This points to RedirectToWhiteList action.
+        /// </summary>
+        /// <returns></returns>
         public ActionResult UnvalidatedRedirectsAndForwardsFix2()
         {
             return View();
@@ -243,7 +259,6 @@ namespace WebGoat.MVC.Controllers
             }
             if (!Url.IsLocalUrl(url))
             {
-                //throw new Exception("This URL does not belong to this domain.");
                 return RedirectToAction("IncorrectURL");
             }
             return View();
@@ -257,15 +272,16 @@ namespace WebGoat.MVC.Controllers
         /// <returns></returns>
         public ActionResult RedirectToWhiteList()
         {
-            string url = Request.QueryString["url"];
-
+            string code = Request.QueryString["code"];
+            string url = string.Empty;
 
             XmlManager xmlManager = new XmlManager(Server.MapPath("~/xml/whitelist.xml"));
-            var whiteList = xmlManager.GetWhiteList();
-
-            if (!whiteList.Contains(url))
+            try
             {
-                //throw new Exception("This URL is not found in our whitelist of domains.");
+                url = xmlManager.GetWhiteList(code);
+            }
+            catch (NullReferenceException)
+            {
                 return RedirectToAction("WhiteListError");
             }
 
@@ -273,6 +289,7 @@ namespace WebGoat.MVC.Controllers
             {
                 url = "http://" + url;
             }
+            
             return Redirect(url);
         }
 
