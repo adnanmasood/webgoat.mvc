@@ -1,0 +1,6 @@
+WebGoat.MVC
+
+WebGoat is a deliberately insecure ASP.NET MVC web application maintained by OWASP designed to teach web application security lessons. In each scenario, users learn their their understanding of a security issue by exploiting a real vulnerability in the WebGoat application. 
+
+For example, in one of the scenarios the user must use SQL injection to view data. The application for demo purposes, providing users with hints and code to further explain the vulnerability.
+

