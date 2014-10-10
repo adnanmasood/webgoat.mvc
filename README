@@ -7,3 +7,7 @@ WebGoat application.
 For example, in one of the scenarios the user must use SQL injection to view data. The application for demo purposes, providing 
 users with hints and code to further explain the vulnerability.
 
+This is based on the OWASP web goat Project
+https://www.owasp.org/index.php/Category:OWASP_WebGoat_Project
+
+
