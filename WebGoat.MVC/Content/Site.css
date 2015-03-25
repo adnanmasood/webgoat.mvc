@@ -322,3 +322,17 @@ div#title {
 .tri-state {
     width: 6em;
 }
+
+
+/****************************************************************
+* King's Modifications - 10/14/2011
+****************************************************************/
+
+a:link { text-decoration: none; }
+
+.child-links { color: Blue; cursor: pointer; }
+.child-links:hover { text-decoration: underline; }
+
+.child-div { padding: 10px; background-color: #DEDEDE; border: 1px solid #CDCDCD; margin-top: 10px; }
+.child-div ol { margin-top: 10px; }
+.child-div ol li { margin-bottom: 10px; }
